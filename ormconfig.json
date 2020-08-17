@@ -1,0 +1,23 @@
+{
+  "type": "mssql",
+  "host": "192.168.0.97",
+  "port": 1433,
+  "username": "sa",
+  "password": "web@1234",
+  "database": "APM",
+  "synchronize": true,
+  "entities": [
+    "src/entity/*.js"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
