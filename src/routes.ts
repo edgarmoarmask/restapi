@@ -7,17 +7,17 @@ import {postSaveAction} from "./controller/PostSaveAction";
  */
 export const AppRoutes = [
     {
-        path: "/submitpass",
-        method: "post",
+        path: "/usersAll",
+        method: "get",
         action: postGetAllAction
     },
     {
-        path: "/posts/:id",
+        path: "/user/:id",
         method: "get",
         action: postGetByIdAction
     },
     {
-        path: "/posts",
+        path: "/submitpass",
         method: "post",
         action: postSaveAction
     }
